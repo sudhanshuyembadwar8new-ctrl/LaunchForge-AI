@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LaunchForge AI
 
-## Getting Started
+LaunchForge AI is a premium SaaS application designed to help freelancers, solo agencies, and teams streamline their project management and proposal generation process using the power of AI.
 
-First, run the development server:
+## The Problem
+Generating project proposals, defining scopes, and managing deliverables can be a time-consuming and tedious process. Agencies often struggle with maintaining consistent quality and speed when pitching to new clients.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## The Solution
+LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA 3) to instantly generate comprehensive project briefs, scopes, pricing proposals, and tasks based on a simple client message. It provides a stunning, production-ready workspace to edit, manage, and export these deliverables.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- **AI-Powered Project Generation**: Instantly generate detailed project scopes and proposals.
+- **Interactive Workspace**: Edit deliverables inline with auto-save functionality.
+- **Task Management**: Track project progress with interactive task checklists.
+- **Export & Share**: Export proposals to PDF or share them via clipboard.
+- **Settings & Preferences**: Manage user profiles, notification toggles, and billing plans.
+- **Dark Mode Premium UI**: A highly polished, modern design language utilizing custom CSS variables, Framer Motion animations, and TailwindCSS.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+- **Framework**: Next.js (App Router)
+- **Styling**: TailwindCSS, Custom CSS Variables, Lucide Icons
+- **Animations**: Framer Motion
+- **Database / Auth**: Supabase
+- **AI Engine**: Groq API (llama3-70b-8192)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup Steps
+1. Clone the repository: `git clone https://github.com/sudhanshuyembadwar8-ctrl/LaunchForge-AI.git`
+2. Install dependencies: `npm install`
+3. Set up your `.env` file (see `.env.example`).
+4. Run the development server: `npm run dev`
+5. Open `http://localhost:3000` in your browser.
 
-## Learn More
+## Environment Variables
+See `.env.example` for the required keys.
 
-To learn more about Next.js, take a look at the following resources:
+## Development Challenges & Solutions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Missing `.env` Blocking App
+**Challenge**: The application initially failed to load due to missing environment variables for Supabase and Groq, leading to silent failures during authentication and AI generation.
+**Solution**: Implemented robust error handling and fallback UI states, and documented the required `.env` variables clearly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. CSS Parsing Errors (`rgba` issue)
+**Challenge**: A mass find-and-replace of legacy CSS variables resulted in invalid CSS syntax (e.g., `var(rgba(...))`), which broke the Next.js build and prevented any pages from rendering.
+**Solution**: Actively debugged the build logs, identified the malformed `globals.css` entries, and used targeted regex to correct the syntax to valid CSS custom properties and inline values, restoring the build.
 
-## Deploy on Vercel
+### 3. Broken Routes (`404 settings/billing`)
+**Challenge**: Navigating to certain settings pages resulted in 404 errors due to missing or incorrectly named Next.js page components.
+**Solution**: Audited the file structure, matched the sidebar links to actual files, and created/moved the necessary `page.tsx` files to ensure seamless routing across the dashboard and settings.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. AI JSON Parsing Issues
+**Challenge**: The Groq AI response was occasionally returning malformed JSON or including markdown code blocks that broke the frontend parser.
+**Solution**: Improved the prompt engineering to enforce strict JSON output and added resilient parsing logic on the client/server boundary to strip markdown and handle partial responses gracefully.
