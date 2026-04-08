@@ -50,3 +50,4 @@ See `.env.example` for the required keys.
 ### 4. AI JSON Parsing Issues
 **Challenge**: The Groq AI response was occasionally returning malformed JSON or including markdown code blocks that broke the frontend parser.
 **Solution**: Improved the prompt engineering to enforce strict JSON output and added resilient parsing logic on the client/server boundary to strip markdown and handle partial responses gracefully.
+
