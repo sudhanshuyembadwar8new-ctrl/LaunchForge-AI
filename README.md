@@ -8,6 +8,7 @@ Generating project proposals, defining scopes, and managing deliverables can be 
 ## The Solution
 LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA 3) to instantly generate comprehensive project briefs, scopes, pricing proposals, and tasks based on a simple client message. It provides a stunning, production-ready workspace to edit, manage, and export these deliverables.
 
+
 ## Features
 - **AI-Powered Project Generation**: Instantly generate detailed project scopes and proposals.
 - **Interactive Workspace**: Edit deliverables inline with auto-save functionality.
