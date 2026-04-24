@@ -28,7 +28,7 @@ LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA
 1. Clone the repository: `git clone https://github.com/sudhanshuyembadwar8-ctrl/LaunchForge-AI.git`
 2. Install dependencies: `npm install`
 3. Set up your `.env` file (see `.env.example`).
-4. Run the development server: `npm run dev`
+4. Run the development server: `npm run dev`                                        
 5. Open `http://localhost:3000` in your browser.
 
 ## Environment Variables
