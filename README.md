@@ -4,7 +4,7 @@ LaunchForge AI is a premium SaaS application designed to help freelancers, solo 
 
 ## The Problem
 Generating project proposals, defining scopes, and managing deliverables can be a time-consuming and tedious process. Agencies often struggle with maintaining consistent quality and speed when pitching to new clients.
-
+                                      
 ## The Solution
 LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA 3) to instantly generate comprehensive project briefs, scopes, pricing proposals, and tasks based on a simple client message. It provides a stunning, production-ready workspace to edit, manage, and export these deliverables.
 
