@@ -11,7 +11,7 @@ LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA
 
 ## Features
 - **AI-Powered Project Generation**: Instantly generate detailed project scopes and proposals.
-- **Interactive Workspace**: Edit deliverables inline with auto-save functionality.
+- **Interactive Workspace**: Edit deliverables inline with auto-save functionality          
 - **Task Management**: Track project progress with interactive task checklists.
 - **Export & Share**: Export proposals to PDF or share them via clipboard.
 - **Settings & Preferences**: Manage user profiles, notification toggles, and billing plans.
