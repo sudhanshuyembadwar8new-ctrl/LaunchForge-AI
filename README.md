@@ -1,6 +1,6 @@
 # LaunchForge AI
 
-LaunchForge AI is a premium SaaS application designed to help freelancers, solo agencies, and teams streamline their project management and proposal generation process using the power of AI.
+LaunchForge AI is a premium SaaS application designed to help freelancers, solo agencies, and teamsstreamline their project management and proposal generation process using the power of AI.
 
 ## The Problem
 Generating project proposals, defining scopes, and managing deliverables can be a time-consuming and tedious process. Agencies often struggle with maintaining consistent quality and speed when pitching to new clients.
@@ -9,27 +9,27 @@ Generating project proposals, defining scopes, and managing deliverables can be 
 LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA 3) to instantly generate comprehensive project briefs, scopes, pricing proposals, and tasks based on a simple client message. It provides a stunning, production-ready workspace to edit, manage, and export these deliverables.
 
 
-## Features
+## Features         
 - **AI-Powered Project Generation**: Instantly generate detailed project scopes and proposals.
-- **Interactive Workspace**: Edit deliverables inline with auto-save functionality          
+- **Interactive Workspace**: Edit deliverables inline with auto-save functionality                  
 - **Task Management**: Track project progress with interactive task checklists.
 - **Export & Share**: Export proposals to PDF or share them via clipboard.
 - **Settings & Preferences**: Manage user profiles, notification toggles, and billing plans.
 - **Dark Mode Premium UI**: A highly polished, modern design language utilizing custom CSS variables, Framer Motion animations, and TailwindCSS.
 
-## Tech Stack
+## Tech Stack         
 - **Framework**: Next.js (App Router)
 - **Styling**: TailwindCSS, Custom CSS Variables, Lucide Icons
 - **Animations**: Framer Motion
 - **Database / Auth**: Supabase
-- **AI Engine**: Groq API (llama3-70b-8192)
+- **AI Engine**: Groq API (llama3-70b-8192)           
 
 ## Setup Steps
 1. Clone the repository: `git clone https://github.com/sudhanshuyembadwar8-ctrl/LaunchForge-AI.git`
 2. Install dependencies: `npm install`
 3. Set up your `.env` file (see `.env.example`).
 4. Run the development server: `npm run dev`                                        
-5. Open `http://localhost:3000` in your browser.
+5. Open `http://localhost:3000` in your browser.  
 
 ## Environment Variables
 See `.env.example` for the required keys.
