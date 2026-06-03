@@ -18,8 +18,8 @@ LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA
 - **Dark Mode Premium UI**: A highly polished, modern design language utilizing custom CSS variables, Framer Motion animations, and TailwindCSS.
 
 ## Tech Stack         
-- **Framework**: Next.js (App Router)
-- **Styling**: TailwindCSS, Custom CSS Variables, Lucide Icons
+- **Framework**: Next.js (App Router)     
+- **Styling**: TailwindCSS, Custom CSS Variables, Lucide Icons              
 - **Animations**: Framer Motion
 - **Database / Auth**: Supabase
 - **AI Engine**: Groq API (llama3-70b-8192)           
