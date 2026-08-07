@@ -10,7 +10,7 @@ LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA
 
 
 ## Features         
-- **AI-Powered Project Generation**: Instantly generate detailed project scopes and proposals.
+- **AI-Powered Project Generation**: Instantly generate detailed project scopes and proposals.                                                  
 - **Interactive Workspace**: Edit deliverables inline with auto-save functionality                  
 - **Task Management**: Track project progress with interactive task checklists.
 - **Export & Share**: Export proposals to PDF or share them via clipboard.
@@ -21,11 +21,11 @@ LaunchForge AI solves this by integrating advanced AI models (via Groq and LLaMA
 - **Framework**: Next.js (App Router)     
 - **Styling**: TailwindCSS, Custom CSS Variables, Lucide Icons              
 - **Animations**: Framer Motion
-- **Database / Auth**: Supabase
+- **Database / Auth**: Supabase                                
 - **AI Engine**: Groq API (llama3-70b-8192)           
 
 ## Setup Steps
-1. Clone the repository: `git clone https://github.com/sudhanshuyembadwar8-ctrl/LaunchForge-AI.git`
+1. Clone the repository: `git clone https://github.com/sudhanshuyembadwar8-ctrl/LaunchForge-AI.git`                 
 2. Install dependencies: `npm install`
 3. Set up your `.env` file (see `.env.example`).
 4. Run the development server: `npm run dev`                                        
