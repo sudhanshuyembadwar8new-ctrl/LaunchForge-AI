@@ -1,4 +1,4 @@
-# LaunchForge AI
+# LaunchForge AI       
 
 LaunchForge AI is a premium SaaS application designed to help freelancers, solo agencies, and teamsstreamline their project management and proposal generation process using the power of AI.
 
